@@ -30,6 +30,6 @@ nb_kgChlore = 0.5*multi
 reponse = f"""Voici les éléments requis pour assainir {water_quantity}L d'eau:
 \t- Filtre(s) : {nb_filtre}
 \t- Lampe(s) UV : {nb_lampsUV}
-\t- Chlore : {nb_kgChlore}kg\n"""
+\t- Chlore : {nb_kgChlore}kg"""
 
 print(reponse)
