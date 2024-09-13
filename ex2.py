@@ -1,19 +1,35 @@
 # TODO: Créer un script pour calculer les ressources nécessaires pour assainir la Seine.
 # TODO: Importer les modules nécessaires.
 
+water_quantity = float(input("Quelle quantité d'eau faut-il assainir ? "))
 
-water_quantity = int(input("Quelle quantité d'eau doit être assainit?"))
 
-def ressource_nécessaire(qt_eau):
-    multi= qt_eau/5
-    
-    nb_filtre= 1*multi
-    nb_lampsUV = 3*multi
-    nb_kgChlore = 0.5*multi
-    return nb_filtre, nb_lampsUV, nb_kgChlore
+multi= water_quantity/5
 
-def retour_message(x,y,z):
-    print("Voici les matériaux requis pour l'assainissement de 10L d'eau: \n\t - filtre: "+str(x)+"\n\t - lamp UV: "+str(y)+"\n\t - Chlore: "+str(z)+"kg") 
+nb_filtre= 1*multi
 
-filtre, lamp, chlore = ressource_nécessaire(water_quantity)
-retour_message(filtre, lamp, chlore)
+if nb_filtre%1 > 0:
+    nb_filtre = int(nb_filtre+1)
+
+else:
+    nb_filtre =int(nb_filtre)
+
+nb_lampsUV = 3*multi
+
+if nb_lampsUV %1 > 0:
+    nb_lampsUV = int(nb_lampsUV+1)
+
+else:
+    nb_lampsUV =int(nb_lampsUV)
+
+nb_kgChlore = 0.5*multi
+
+
+
+
+reponse = f"""Voici les éléments requis pour assainir {water_quantity}L d'eau:
+\t- Filtre(s) : {nb_filtre}
+\t- Lampe(s) UV : {nb_lampsUV}
+\t- Chlore : {nb_kgChlore}kg"""
+
+print(reponse)
