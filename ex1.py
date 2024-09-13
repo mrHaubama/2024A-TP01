@@ -5,10 +5,10 @@
 
  
 
-athlete = input("Quel est le nom de l'athlete ?")
 country = input("De quelle nationalité est l'athlète ? ")
-date = input("Quelle est la date du record ?") 
-discipline= input ("Dans quelle discipline ?")
-categorie= input("Quelconque categorie ?")
-record = input ("quel est le record ?")
-nouveau_record= print ("le nouveau record: \n ----------------- \n ", date, "\n", discipline, "-", categorie, "\n", athlete, country, "-", record)
+athlete = input("Quel est son nom ? ")
+date = input("Date du record ? ") 
+discipline= input ("Dans quelle discipline ? ")
+categorie= input("Dans une catégorie spécifique ? ")
+record = input ("Quel est le record ? ")
+nouveau_record= print ("\nNouveau Record:\n--------------------\n"+date,"-",discipline,"-",categorie+":\n\t"+athlete,"("+country+")","-", record)
