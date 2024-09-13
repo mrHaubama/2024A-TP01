@@ -3,7 +3,7 @@
 #        et affiche le résultat au format "XX km".
 #        Assurez une gestion du pourcentage valide au cours de votre programme (% toujours dans [0 ; 100]).
 
-battery_level = int(input("Le niveau de la batterie est: "))
+battery_level = int(input("Pourcentage de batterie ? "))
 
 def distance_restant(entre):
     distance = 0
@@ -26,4 +26,4 @@ def distance_restant(entre):
             distance += 6
     return distance 
 
-print("Il reste ", distance_restant(battery_level), "km")
+print(distance_restant(battery_level), "km")
