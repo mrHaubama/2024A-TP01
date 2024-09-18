@@ -5,9 +5,9 @@
 
 battery_level =float(input("Pourcentage de batterie ? "))
 
-def distance_restant(entre):
+def distance_restant(niveau_batt):
     distance = 0
-    bat= entre
+    bat= niveau_batt
     while bat != 0:
         if bat > 50:
             reste= bat-50

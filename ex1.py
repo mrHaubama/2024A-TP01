@@ -11,4 +11,8 @@ date = input("Date du record ? ")
 discipline= input ("Dans quelle discipline ? ")
 categorie= input("Dans une catégorie spécifique ? ")
 record = input ("Quel est le record ? ")
-nouveau_record= print ("\nNouveau Record:\n--------------------\n"+date,"-",discipline,"-",categorie+":\n\t"+athlete,"("+country+")","-", record)
+
+nouveau_record= print(f"""\nNouveau Record:
+--------------------
+{date} - {discipline} - {categorie}:
+\t{athlete} ({country}) - {record}""")

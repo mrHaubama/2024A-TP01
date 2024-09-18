@@ -4,9 +4,9 @@
 water_quantity = float(input("Quelle quantité d'eau faut-il assainir ? "))
 
 
-multi= water_quantity/5
+multiplicateur= water_quantity/5
 
-nb_filtre= 1*multi
+nb_filtre= 1*multiplicateur
 
 if nb_filtre%1 > 0:
     nb_filtre = int(nb_filtre+1)
@@ -14,7 +14,7 @@ if nb_filtre%1 > 0:
 else:
     nb_filtre =int(nb_filtre)
 
-nb_lampsUV = 3*multi
+nb_lampsUV = 3*multiplicateur
 
 if nb_lampsUV %1 > 0:
     nb_lampsUV = int(nb_lampsUV+1)
@@ -22,7 +22,7 @@ if nb_lampsUV %1 > 0:
 else:
     nb_lampsUV =int(nb_lampsUV)
 
-nb_kgChlore = 0.5*multi
+nb_kgChlore = 0.5*multiplicateur
 
 
 

@@ -11,7 +11,7 @@ code_medals = code_medals.lower()
 def Table_medals(code_medals):
     if not all(char in "gbs" for char in code_medals):
         print("Ceci est une chaine invalide.")
-        return
+
     if "g" in code_medals:
         count_g = code_medals.count("g")
         print(f"{country}:")
